@@ -55,32 +55,59 @@
   <section class="hero" id="inicio">
     <div class="hero-media">
       <picture>
-        <source type="image/webp" srcset="assets/img/dr-guilherme-01-640.webp 640w, assets/img/dr-guilherme-01-960.webp 960w, assets/img/dr-guilherme-01-1440.webp 1440w, assets/img/dr-guilherme-01-2000.webp 2000w, assets/img/dr-guilherme-01.webp 2400w" sizes="(max-width: 767px) 100vw, 58vw">
-        <img src="assets/img/dr-guilherme-01-2000.webp" alt="Dr. Guilherme Lobo, médico, sorrindo em ambiente sofisticado com madeira e plantas" width="2400" height="3607" loading="eager" fetchpriority="high">
+        <source media="(min-width: 900px)" type="image/webp" srcset="assets/img/hero-desktop-bg-960.webp 960w, assets/img/hero-desktop-bg-1440.webp 1440w, assets/img/hero-desktop-bg-2000.webp 2000w, assets/img/hero-desktop-bg.webp 2752w" sizes="100vw">
+        <source type="image/webp" srcset="assets/img/dr-guilherme-01-640.webp 640w, assets/img/dr-guilherme-01-960.webp 960w, assets/img/dr-guilherme-01-1440.webp 1440w, assets/img/dr-guilherme-01-2000.webp 2000w, assets/img/dr-guilherme-01.webp 2400w" sizes="100vw">
+        <img src="assets/img/dr-guilherme-01-2000.webp" alt="Dr. Guilherme Lobo, médico" width="2400" height="3607" loading="eager" fetchpriority="high">
       </picture>
       <div class="hero-media-fade" aria-hidden="true"></div>
     </div>
 
     <div class="hero-content">
-      <h1 class="hero-title reveal">Antes de mudar o peso, <em>entenda o terreno.</em></h1>
-      <p class="hero-sub reveal">Uma abordagem individualizada para emagrecimento, saúde metabólica e longevidade.</p>
+      <h1 class="hero-title reveal">Seu corpo mudou. <em>Sua estratégia de emagrecimento também precisa mudar.</em></h1>
+      <p class="hero-sub reveal">Uma abordagem individualizada para quem busca cuidar do emagrecimento, da saúde metabólica e da longevidade, com acompanhamento médico experiente.</p>
       <div class="hero-actions reveal">
         <a href="#abordagem" class="btn btn-outline">Conheça a abordagem</a>
         <a href="#avaliacao" class="btn btn-primary">Agendar avaliação</a>
       </div>
       <div class="hero-tag reveal">
-        <span class="hero-tag-name">Dr. Guilherme Lobo</span>
+        <div class="hero-tag-row">
+          <span class="hero-tag-name">Dr. Guilherme Lobo</span>
+          <span class="hero-tag-crm">CRM-CE 23057 • RQE 13067</span>
+        </div>
         <span class="hero-tag-sub">Médico. Mais de 15 anos de atuação.</span>
       </div>
     </div>
 
     <a href="#abordagem" class="scroll-hint" aria-label="Rolar para conhecer a abordagem">
       <span>role para conhecer a abordagem</span>
-      <svg width="14" height="20" viewBox="0 0 14 20" fill="none"><path d="M7 1v17M1 12l6 6 6-6" stroke="currentColor" stroke-width="1.2"/></svg>
+      <svg width="9" height="13" viewBox="0 0 14 20" fill="none"><path d="M7 1v17M1 12l6 6 6-6" stroke="currentColor" stroke-width="1.2"/></svg>
     </a>
   </section>
 
-  <!-- 02. O PROBLEMA -->
+  <!-- 02. PARA QUEM É / NÃO É -->
+  <section class="section section-bg-alt" id="para-quem">
+    <div class="container">
+      <div class="forwho-grid">
+        <div class="reveal">
+          <h3 class="forwho-heading">Para quem é</h3>
+          <ul class="plain-list">
+            <li>Para quem já tentou emagrecer mais de uma vez.</li>
+            <li>Para quem emagreceu e recuperou parte do peso.</li>
+            <li>Para quem está considerando medicamentos para emagrecimento e quer entender onde eles se encaixam.</li>
+            <li>Para quem percebe que a saúde metabólica precisa entrar na conversa.</li>
+            <li>Para quem não quer esperar um problema aparecer para começar a cuidar.</li>
+            <li>Para quem quer emagrecer olhando também para os próximos anos.</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h3 class="forwho-heading">Talvez não seja para você se</h3>
+          <p class="notfor-text">Talvez esta abordagem não seja para você se você procura apenas uma prescrição automática, sem avaliação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03. O PROBLEMA -->
   <section class="section section-bg-alt" id="abordagem">
     <div class="container">
       <h2 class="section-title reveal">Muitas pessoas passam anos tentando mudar o peso sem nunca entender por que o resultado não se sustenta.</h2>
@@ -100,7 +127,7 @@
     </div>
   </section>
 
-  <!-- 03. A PERGUNTA DIFERENTE -->
+  <!-- 04. A PERGUNTA DIFERENTE -->
   <section class="section section-minimal" id="pergunta">
     <div class="container container-narrow">
       <h2 class="section-title-lg reveal">E se a pergunta não fosse apenas quanto você precisa emagrecer?</h2>
@@ -109,7 +136,7 @@
     </div>
   </section>
 
-  <!-- 04. TERRENO BIOLÓGICO -->
+  <!-- 05. TERRENO BIOLÓGICO -->
   <section class="section section-dark" id="terreno">
     <div class="container">
       <h2 class="section-title-lg light reveal">Terreno Biológico™</h2>
@@ -141,7 +168,7 @@
     </div>
   </section>
 
-  <!-- 05. CANETA NÃO É INIMIGA -->
+  <!-- 06. CANETA NÃO É INIMIGA -->
   <section class="section" id="estrategia">
     <div class="container container-narrow">
       <h2 class="section-title reveal">A caneta pode ser uma ferramenta.<br>Ela não precisa ser o tratamento inteiro.</h2>
@@ -164,7 +191,7 @@
     </div>
   </section>
 
-  <!-- 06. LONGEVIDADE -->
+  <!-- 07. LONGEVIDADE -->
   <section class="section section-bg-alt" id="longevidade">
     <div class="container">
       <h2 class="section-title reveal">Emagrecer muda o presente.<br>Cuidar da saúde metabólica ajuda a construir o futuro.</h2>
@@ -177,6 +204,7 @@
         <div class="longevity-item">Capacidade de viver experiências</div>
         <div class="longevity-item">Estar presente para a família</div>
         <div class="longevity-item">Qualidade de vida</div>
+        <div class="longevity-item">Disposição</div>
       </div>
 
       <blockquote class="big-quote big-quote-standalone reveal">Quando você pensa em você daqui a 15 ou 20 anos, o que gostaria de continuar conseguindo fazer?</blockquote>
@@ -184,7 +212,7 @@
   </section>
 
 
-  <!-- 07. QUEM É DR. GUILHERME -->
+  <!-- 08. QUEM É DR. GUILHERME -->
   <section class="section" id="dr-guilherme">
     <div class="container">
       <div class="dr-intro">
@@ -197,11 +225,34 @@
         </picture>
       </div>
 
-      <div class="story-grid">
-        <div class="story-item reveal">
-          <span class="story-tag">Medicina</span>
-          <p>Ciência. A base técnica que sustenta cada avaliação e cada decisão clínica.</p>
+      <div class="story-feature reveal">
+        <span class="story-tag">Medicina</span>
+        <p class="story-feature-crm">CRM-CE 23057 • RQE 13067</p>
+        <p class="story-feature-intro">Ciência. A base técnica que sustenta cada avaliação e cada decisão clínica.</p>
+
+        <div class="big-number">
+          <span class="big-number-figure">15<span class="plus">+</span></span>
+          <span class="big-number-label">anos de<br>medicina</span>
         </div>
+
+        <div class="credentials-grid">
+          <div class="credential-item">
+            <p class="credential-title">Formação em Medicina</p>
+            <p class="credential-inst">Universidade Federal de Goiás</p>
+          </div>
+          <div class="credential-item">
+            <p class="credential-title">Residência Médica em Cirurgia Geral</p>
+            <p class="credential-inst">Secretaria de Estado de Saúde do Distrito Federal</p>
+          </div>
+          <div class="credential-item">
+            <p class="credential-title">Pós-graduação em Medicina Integrativa</p>
+            <p class="credential-inst">Universidade de Saúde Integrativa</p>
+          </div>
+        </div>
+        <p class="fine-note">A autoridade vem da formação, da experiência, da clareza de pensamento e de uma metodologia própria de compreender cada paciente.</p>
+      </div>
+
+      <div class="story-grid story-grid-secondary">
         <div class="story-item reveal">
           <span class="story-tag">Família</span>
           <p>Propósito. O motivo pelo qual entender o paciente à frente importa tanto.</p>
@@ -232,32 +283,6 @@
       <p>Foi no kitesurf que Guilherme aprendeu uma ideia que também atravessa sua forma de enxergar a medicina. Existem condições que não escolhemos. Mas podem ser compreendidas. E, a partir dessa compreensão, é possível ajustar a jornada.</p>
     </figcaption>
   </figure>
-
-  <!-- 08. EXPERIÊNCIA E FORMAÇÃO -->
-  <section class="section section-bg-alt" id="formacao">
-    <div class="container">
-      <div class="big-number reveal">
-        <span class="big-number-figure">15<span class="plus">+</span></span>
-        <span class="big-number-label">anos de<br>medicina</span>
-      </div>
-
-      <div class="credentials-grid reveal">
-        <div class="credential-item">
-          <p class="credential-title">Formação em Medicina</p>
-          <p class="credential-inst">Universidade Federal de Goiás</p>
-        </div>
-        <div class="credential-item">
-          <p class="credential-title">Residência Médica em Cirurgia Geral</p>
-          <p class="credential-inst">Secretaria de Estado de Saúde do Distrito Federal</p>
-        </div>
-        <div class="credential-item">
-          <p class="credential-title">Pós-graduação em Medicina Integrativa</p>
-          <p class="credential-inst">Universidade de Saúde Integrativa</p>
-        </div>
-      </div>
-      <p class="fine-note reveal">A autoridade vem da formação, da experiência, da clareza de pensamento e de uma metodologia própria de compreender cada paciente.</p>
-    </div>
-  </section>
 
   <!-- 09. COMO FUNCIONA -->
   <section class="section" id="como-funciona">
@@ -361,30 +386,7 @@
     </div>
   </section>
 
-  <!-- 12. PARA QUEM É / NÃO É -->
-  <section class="section section-bg-alt" id="para-quem">
-    <div class="container">
-      <div class="forwho-grid">
-        <div class="reveal">
-          <h3 class="forwho-heading">Para quem é</h3>
-          <ul class="plain-list">
-            <li>Para quem já tentou emagrecer mais de uma vez.</li>
-            <li>Para quem emagreceu e recuperou parte do peso.</li>
-            <li>Para quem está considerando medicamentos para emagrecimento e quer entender onde eles se encaixam.</li>
-            <li>Para quem percebe que a saúde metabólica precisa entrar na conversa.</li>
-            <li>Para quem não quer esperar um problema aparecer para começar a cuidar.</li>
-            <li>Para quem quer emagrecer olhando também para os próximos anos.</li>
-          </ul>
-        </div>
-        <div class="reveal">
-          <h3 class="forwho-heading">Talvez não seja para você se</h3>
-          <p class="notfor-text">Talvez esta abordagem não seja para você se você procura apenas uma prescrição automática, sem avaliação.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 13. MANIFESTO -->
+  <!-- 12. MANIFESTO -->
   <section class="section section-dark manifesto" id="manifesto">
     <div class="container container-narrow">
       <p class="manifesto-text reveal">
@@ -398,7 +400,7 @@
     </div>
   </section>
 
-  <!-- 14. FAQ -->
+  <!-- 13. FAQ -->
   <section class="section" id="faq">
     <div class="container container-narrow">
       <h2 class="section-title reveal">FAQ</h2>
@@ -448,7 +450,7 @@
     </div>
   </section>
 
-  <!-- 15. CTA FINAL -->
+  <!-- 14. CTA FINAL -->
   <section class="section cta-final" id="cta-final">
     <div class="container container-narrow">
       <h2 class="section-title-lg reveal">Comece pela avaliação.</h2>
@@ -487,6 +489,10 @@
     <p class="footer-copy">© <span id="year"></span> Dr. Guilherme Lobo. Todos os direitos reservados.</p>
   </div>
 </footer>
+
+<a href="#" class="whatsapp-float whatsapp-link" aria-label="Falar com a equipe pelo WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.373 3 4 8.373 4 15c0 2.34.687 4.523 1.875 6.375L4 29l7.813-1.813C13.594 28.062 15.469 28.5 16 28.5 22.627 28.5 28 23.127 28 15S22.627 3 16 3zm0 23c-1.53 0-3.037-.412-4.35-1.192l-.312-.187-4.635 1.076 1.092-4.518-.204-.324C6.712 19.49 6.2 17.767 6.2 15c0-5.413 4.387-9.8 9.8-9.8s9.8 4.387 9.8 9.8-4.387 9.8-9.8 9.8zm5.375-7.34c-.294-.147-1.74-.86-2.01-.958-.27-.098-.467-.147-.664.147-.196.294-.762.958-.934 1.155-.172.196-.343.22-.637.073-.294-.147-1.24-.457-2.362-1.46-.873-.778-1.462-1.74-1.634-2.034-.172-.294-.018-.453.13-.6.147-.147.343-.343.515-.539.172-.196.229-.343.343-.564.114-.221.057-.417-.04-.564-.098-.147-.616-1.484-.844-2.034-.222-.535-.448-.462-.615-.47-.157-.008-.343-.01-.526-.01-.184 0-.482.07-.735.343-.253.274-.966.945-.966 2.305 0 1.36.988 2.674 1.126 2.86.138.185 1.907 2.913 4.622 3.968.646.253 1.15.404 1.544.518.65.19 1.24.163 1.706.099.52-.073 1.607-.657 1.834-1.292.229-.634.229-1.178.16-1.292-.068-.114-.253-.18-.547-.327z"/></svg>
+</a>
 
 <script src="js/main.js"></script>
 </body>
