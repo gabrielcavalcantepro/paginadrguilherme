@@ -2,12 +2,10 @@
   "use strict";
 
   // ---------------------------------------------------------
-  // WhatsApp: número centralizado. Troque SEUNUMERO pelo
-  // número real da equipe no formato internacional,
-  // por exemplo: 5562999999999
+  // WhatsApp: número centralizado no formato internacional.
   // ---------------------------------------------------------
-  var WHATSAPP_NUMBER = "SEUNUMERO";
-  var WHATSAPP_MESSAGE = "Olá! Gostaria de saber mais sobre a avaliação com o Dr. Guilherme.";
+  var WHATSAPP_NUMBER = "558581140601";
+  var WHATSAPP_MESSAGE = "Olá, vim do site e gostaria de mais informações";
   var whatsappUrl = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(WHATSAPP_MESSAGE);
 
   document.querySelectorAll(".whatsapp-link").forEach(function (link) {
