@@ -446,13 +446,23 @@ button{ font-family: inherit; background:none; border:none; cursor:pointer; colo
 }
 .terrain-line{
   position:absolute; top:50%; left:50%;
-  width:1px; height:220px;
+  width:1px; height:86px;
+  transform-origin: top center;
+  transform: rotate(calc(var(--a) * 45deg + 180deg)) translateY(67px);
+}
+.terrain-line::after{
+  content:'';
+  position:absolute; top:0; left:0;
+  width:100%; height:100%;
   background: linear-gradient(180deg, rgba(216,211,196,0.5), rgba(216,211,196,0.08));
   transform-origin: top center;
-  transform: rotate(calc(var(--a) * 45deg + 180deg));
+  transform: scaleY(0);
+  transition: transform 0.7s var(--ease);
+  transition-delay: calc(var(--a) * 0.15s);
 }
+.terrain-diagram.is-visible .terrain-line::after{ transform: scaleY(1); }
 @media (max-width: 560px){
-  .terrain-line{ height: 145px; }
+  .terrain-line{ height: 41px; transform: rotate(calc(var(--a) * 45deg + 180deg)) translateY(52px); }
 }
 .terrain-core{
   position:absolute; top:50%; left:50%;
@@ -487,6 +497,23 @@ button{ font-family: inherit; background:none; border:none; cursor:pointer; colo
   padding: 10px;
   line-height:1.3;
   background: rgba(255,255,255,0.02);
+}
+@keyframes terrainNodeGlow{
+  0%, 100% {
+    box-shadow: 0 0 0 rgba(110,116,85,0);
+    border-color: rgba(216,211,196,0.28);
+  }
+  18%, 82% {
+    box-shadow: 0 0 18px 3px rgba(110,116,85,0.35);
+    border-color: rgba(110,116,85,0.5);
+  }
+}
+.terrain-diagram.is-visible .terrain-node{
+  animation-name: terrainNodeGlow;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--a) * 0.15s + 0.7s);
+  animation-duration: calc(2.75s - (var(--a) * 0.15s + 0.7s));
 }
 @media (max-width: 560px){
   .terrain-node{ transform:
